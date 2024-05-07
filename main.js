@@ -24,3 +24,21 @@ const images = [
 
 console.log(images)
 
+let container = document.getElementById("container")
+let btnSuccessiva = document.getElementById("successiva")
+let btnPrecedente = document.getElementById("precedente")
+
+for (let i = 0; i < images.length; i++) {
+
+    let elemento = slideGenerator (images[i])
+    container.innerHTML = elemento
+    
+}
+
+function slideGenerator(slide) {
+    return `<div class=slides>
+                 <h2>${slide.title}</h2>
+                 <p>${slide.text}</p>
+                 <img src="${slide.image}" alt="${slide.image}</img>
+            </div>`
+}

@@ -3,3 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+img {
+    height: 20rem;
+    width: 30rem;
+}
+
+.active {
+    display: block;
+}
+
+button {
+    margin: 0.5rem;
+}
